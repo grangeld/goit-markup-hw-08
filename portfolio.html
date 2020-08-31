@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="Верстка макета" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Решение для бизнеса</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
@@ -16,55 +16,73 @@
   </head>
 
   <body>
-    <header class="header portfolio_line">
+    <header class="header">
       <!--Навигация-->
-      <div class="container">
-        <nav class="navigation">
-          <a class="logo underline" href="./index.html" lang="en"
-            ><span class="logo-web">Web</span> Studio</a
+      <div class="container header-conteiner">
+        <a class="logo underline" href="./index.html" lang="en"
+          ><span class="logo-web">Web</span> Studio</a
+        >
+        <button
+          class="menu-btn"
+          type="button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
           >
-          <ul class="list-style navigation-list">
-            <li class="navigation-list-item">
-              <a class="header-menu underline" href="./index.html">Студия</a>
-            </li>
-            <li class="navigation-list-item">
+            <use
+              class="icon-cross"
+              href="./images/svg/sprite.svg#menu-close"
+            ></use>
+            <use class="icon-menu" href="./images/svg/sprite.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="list-style navigation-list">
+              <li class="navigation-list-item">
+                <a class="header-menu underline" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="header-menu open underline" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="header-menu underline" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!--номера для связи-->
+          <ul class="list-style address-navigation">
+            <li class="address-navigation-list">
               <a
-                class="header-menu open open_portfolio underline"
-                href="./portfolio.html"
-                >Портфолио</a
+                class="header-address underline"
+                href="mailto:info@devstudio.com"
               >
+                <address>
+                  <svg class="address-navigation-icon" width="16" height="11">
+                    <use href="./images/svg/sprite.svg#email"></use>
+                  </svg>
+                  info@devstudio.com
+                </address>
+              </a>
             </li>
-            <li class="navigation-list-item">
-              <a class="header-menu underline" href="">Контакты</a>
+            <li class="address-navigation-list">
+              <a class="header-address underline" href="tel:+380961111111">
+                <address>
+                  <svg class="address-navigation-icon" width="10" height="15">
+                    <use href="./images/svg/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </address>
+              </a>
             </li>
           </ul>
-        </nav>
-        <!--номера для связи-->
-        <ul class="list-style address-navigation">
-          <li class="address-navigation-list">
-            <a
-              class="header-address underline"
-              href="mailto:info@devstudio.com"
-            >
-              <address>
-                <svg class="address-navigation-icon" width="16" height="11">
-                  <use href="./images/svg/sprite.svg#email"></use>
-                </svg>
-                info@devstudio.com
-              </address>
-            </a>
-          </li>
-          <li class="address-navigation-list">
-            <a class="header-address underline" href="tel:+380961111111">
-              <address>
-                <svg class="address-navigation-icon" width="10" height="15">
-                  <use href="./images/svg/sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </address>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -127,10 +145,13 @@
                 <div class="overlay">
                   <img
                     class="content-portfolio-list-img"
-                    src="./images/portfolio/tehno.jpg"
+                    srcset="
+                      ./images/portfolio/tehno/img.jpg    450w,
+                      ./images/portfolio/tehno/img@2x.jpg 900w
+                    "
+                    src="./images/portfolio/tehno/img.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
+                    size="(min-width: 1200) 33vw, (min-width: 768px) 50vw, (max-width: 767) 100vw"
                   />
                   <p class="work-invisible">
                     Технокряк это современная площадка распространения
@@ -150,11 +171,15 @@
                 <div class="overlay">
                   <img
                     class="content-portfolio-list-img"
-                    src="./images/portfolio/new-orlean.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/portfolio/new-orlean/img.jpg    450w,
+                      ./images/portfolio/new-orlean/img@2x.jpg 900w
+                    "
+                    src="./images/portfolio/new-orlean/img.jpg"
+                    alt="Технокряк"
+                    size="(min-width: 1200) 33vw, (min-width: 768px) 50vw, (max-width: 767) 100vw"
                   />
+
                   <p class="work-invisible">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -173,11 +198,15 @@
                 <div class="overlay">
                   <img
                     class="content-portfolio-list-img"
-                    src="./images/portfolio/seafood.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/portfolio/seafood/img.jpg    450w,
+                      ./images/portfolio/seafood/img@2x.jpg 900w
+                    "
+                    src="./images/portfolio/seafood/img.jpg"
+                    alt="Технокряк"
+                    size="(min-width: 1200) 33vw, (min-width: 768px) 50vw, (max-width: 767) 100vw"
                   />
+
                   <p class="work-invisible">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -196,11 +225,15 @@
                 <div class="overlay">
                   <img
                     class="content-portfolio-list-img"
-                    src="./images/portfolio/prime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/portfolio/prime/img.jpg    450w,
+                      ./images/portfolio/prime/img@2x.jpg 900w
+                    "
+                    src="./images/portfolio/prime/img.jpg"
+                    alt="Технокряк"
+                    size="(min-width: 1200) 33vw, (min-width: 768px) 50vw, (max-width: 767) 100vw"
                   />
+
                   <p class="work-invisible">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -219,11 +252,15 @@
                 <div class="overlay">
                   <img
                     class="content-portfolio-list-img"
-                    src="./images/portfolio/boxes.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/portfolio/boxes/img.jpg    450w,
+                      ./images/portfolio/boxes/img@2x.jpg 900w
+                    "
+                    src="./images/portfolio/boxes/img.jpg"
+                    alt="Технокряк"
+                    size="(min-width: 1200) 33vw, (min-width: 768px) 50vw, (max-width: 767) 100vw"
                   />
+
                   <p class="work-invisible">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -242,11 +279,15 @@
                 <div class="overlay">
                   <img
                     class="content-portfolio-list-img"
-                    src="./images/portfolio/inspiration.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/portfolio/inspiration/img.jpg    450w,
+                      ./images/portfolio/inspiration/img@2x.jpg 900w
+                    "
+                    src="./images/portfolio/inspiration/img.jpg"
+                    alt="Технокряк"
+                    size="(min-width: 1200) 33vw, (min-width: 768px) 50vw, (max-width: 767) 100vw"
                   />
+
                   <p class="work-invisible">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -265,11 +306,15 @@
                 <div class="overlay">
                   <img
                     class="content-portfolio-list-img"
-                    src="./images/portfolio/limited-edition.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/portfolio/limited-edition/img.jpg    450w,
+                      ./images/portfolio/limited-edition/img@2x.jpg 900w
+                    "
+                    src="./images/portfolio/limited-edition/img.jpg"
+                    alt="Технокряк"
+                    size="(min-width: 1200) 33vw, (min-width: 768px) 50vw, (max-width: 767) 100vw"
                   />
+
                   <p class="work-invisible">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -288,11 +333,15 @@
                 <div class="overlay">
                   <img
                     class="content-portfolio-list-img"
-                    src="./images/portfolio/lab.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/portfolio/lab/img.jpg    450w,
+                      ./images/portfolio/lab/img@2x.jpg 900w
+                    "
+                    src="./images/portfolio/lab/img.jpg"
+                    alt="Технокряк"
+                    size="(min-width: 1200) 33vw, (min-width: 768px) 50vw, (max-width: 767) 100vw"
                   />
+
                   <p class="work-invisible">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -311,11 +360,15 @@
                 <div class="overlay">
                   <img
                     class="content-portfolio-list-img"
-                    src="./images/portfolio/growing-business.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/portfolio/growing-business/img.jpg    450w,
+                      ./images/portfolio/growing-business/img@2x.jpg 900w
+                    "
+                    src="./images/portfolio/growing-business/img.jpg"
+                    alt="Технокряк"
+                    size="(min-width: 1200) 33vw, (min-width: 768px) 50vw, (max-width: 767) 100vw"
                   />
+
                   <p class="work-invisible">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -437,5 +490,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

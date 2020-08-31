@@ -13,9 +13,24 @@
   background-color: black;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    // max-width: 480px;
+
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/jpg/mobile-hero.jpg');
+  }
 }
 
 .hero-h1 {
+  margin-right: auto;
+  margin-left: auto;
   color: $text-on-background;
   letter-spacing: 0.06em;
   line-height: 1.36;
@@ -25,6 +40,10 @@
   margin-top: 0px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 
 /*кнопка в герои*/

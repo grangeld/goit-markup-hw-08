@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="Верстка макета" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Решение для бизнеса</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
@@ -18,13 +19,13 @@
   <body>
     <header class="header">
       <!--Навигация-->
-      <div class="container">
+      <div class="container header-conteiner">
         <a class="logo underline" href="./index.html" lang="en"
           ><span class="logo-web">Web</span> Studio</a
         >
         <button
+          class="menu-btn"
           type="button"
-          class="menu-button"
           aria-expanded="false"
           data-menu-button
         >
@@ -40,7 +41,7 @@
             <use class="icon-menu" href="./images/svg/sprite.svg#menu"></use>
           </svg>
         </button>
-        <div class="menu-container">
+        <div class="menu-container" data-menu>
           <nav class="navigation">
             <ul class="list-style navigation-list">
               <li class="navigation-list-item">
@@ -167,10 +168,14 @@
             <li class="our-occupation-list list">
               <img
                 class="our-occupation-img"
-                src="./images/jpg/nout.jpg"
-                alt="ноут бук"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/jpg/aimg.jpg  450w,
+                  ./images/jpg/aimg.jpg  900w,
+                  ./images/jpg/aimg.jpg 1350w
+                "
+                src="./images/jpg/aimg.jpg"
+                alt="пк"
+                size="(min-width: 1200) 33vw"
               />
               <div class="background-text">
                 <h3 class="work-img">Десктопные приложения</h3>
@@ -179,10 +184,14 @@
             <li class="our-occupation-list list">
               <img
                 class="our-occupation-img"
-                src="./images/jpg/telefon.jpg"
-                alt="телефон"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/jpg/bimg.jpg  450w,
+                  ./images/jpg/bimg.jpg  900w,
+                  ./images/jpg/bimg.jpg 1350w
+                "
+                src="./images/jpg/bimg.jpg"
+                alt="инфо"
+                size="(min-width: 1200) 33vw"
               />
               <div class="background-text">
                 <h3 class="work-img">Мобильные приложения</h3>
@@ -191,10 +200,14 @@
             <li class="our-occupation-list list">
               <img
                 class="our-occupation-img"
-                src="./images/jpg/monitor.jpg"
-                alt="монитор"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/jpg/img.jpg  450w,
+                  ./images/jpg/img.jpg  900w,
+                  ./images/jpg/img.jpg 1350w
+                "
+                src="./images/jpg/img.jpg"
+                alt="инфо ещё"
+                size="(min-width: 1200) 33vw"
               />
               <div class="background-text">
                 <h3 class="work-img">Дизайнерские решения</h3>
@@ -212,10 +225,14 @@
             <li class="list section-name-list">
               <img
                 class="section-list-name-img"
-                src="./images/team/nikolai.jpg"
-                alt="наш сотрудник николай"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/team/aimg.jpg  450w,
+                  ./images/team/aimg.jpg  900w,
+                  ./images/team/aimg.jpg 1350w
+                "
+                src="./images/team/aimg.jpg"
+                alt="сотрудник"
+                size="(max-width: 767px) 100vw, (min-width: 1200) 25vw, (min-width: 768) 50vw"
               />
               <h3 class="team-name">Николай Кучеренко</h3>
               <p class="team-position">Product Designer</p>
@@ -268,10 +285,14 @@
             <li class="list section-name-list">
               <img
                 class="section-list-name-img"
-                src="./images/team/olga.jpg"
-                alt="наш сотрудник ольга"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/team/cimg.jpg  450w,
+                  ./images/team/cimg.jpg  900w,
+                  ./images/team/cimg.jpg 1350w
+                "
+                src="./images/team/cimg.jpg"
+                alt="сотрудник"
+                size="(max-width: 767px) 100vw, (min-width: 1200) 25vw, (min-width: 768) 50vw"
               />
               <h3 class="team-name">Ольга Иванова</h3>
               <p class="team-position">Frontend Developer</p>
@@ -323,10 +344,14 @@
             <li class="list section-name-list">
               <img
                 class="section-list-name-img"
-                src="./images/team/andrei.jpg"
-                alt="наш сотрудник андрей"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/team/bimg.jpg  450w,
+                  ./images/team/bimg.jpg  900w,
+                  ./images/team/bimg.jpg 1350w
+                "
+                src="./images/team/bimg.jpg"
+                alt="сотрудник"
+                size="(max-width: 767px) 100vw, (min-width: 1200) 25vw, (min-width: 768) 50vw"
               />
               <h3 class="team-name">Андрей Шевченко</h3>
               <p class="team-position">Marketing</p>
@@ -378,10 +403,14 @@
             <li class="list section-name-list">
               <img
                 class="section-list-name-img"
-                src="./images/team/ivan.jpg"
-                alt="наш сотрудник иван"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/team/vimg.jpg  450w,
+                  ./images/team/vimg.jpg  900w,
+                  ./images/team/vimg.jpg 1350w
+                "
+                src="./images/team/vimg.jpg"
+                alt="сотрудник"
+                size="(max-width: 767px) 100vw, (min-width: 1200) 25vw, (min-width: 768) 50vw"
               />
               <h3 class="team-name">Иван Николаев</h3>
               <p class="team-position">UI Designer</p>
@@ -602,7 +631,7 @@
         <div class="footer-container-form">
           <b class="footer-join">Подпишитесь на рассылку</b>
 
-          <form action="#" method="GET">
+          <form action="#" method="GET" class="insert-footer-container-form">
             <input
               class="footer-email"
               type="email"
@@ -620,6 +649,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button-close" data-modal-close>

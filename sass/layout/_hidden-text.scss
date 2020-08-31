@@ -4,7 +4,7 @@
   font-size: 18px;
   line-height: 1.55;
   color: $text-on-background;
-  width: 370px;
+  // width: 370px;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   padding-left: 24px;
@@ -31,3 +31,9 @@
     transform: translateY(-100%);
   }
 }
+
+// .work-invisible {
+//   @media screen and (min-width: 767px) {
+//     width: 100%;
+//   }
+// }

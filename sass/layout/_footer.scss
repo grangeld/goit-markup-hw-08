@@ -128,3 +128,37 @@
   letter-spacing: 0.06em;
   color: #ffffff;
 }
+
+.footer .container {
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-container-adress {
+    text-align: center;
+  }
+  .logo-footer {
+    margin-right: 0px;
+  }
+  .footer-container-adress {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+  .footer-container-connect {
+    margin-right: 0;
+    margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .footer-container-form {
+    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .footer-email {
+    margin-bottom: 20px;
+  }
+}
