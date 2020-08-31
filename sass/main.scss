@@ -20,3 +20,12 @@
 @import './pages/portfolio';
 @import './components/modal-button';
 @import './components/modal';
+body {
+  background-color: #ffffff;
+}
+@media screen and (min-width: 700px) {
+  body {
+    background-color: black;
+    margin-bottom: 100px;
+  }
+}
