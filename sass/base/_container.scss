@@ -1,0 +1,33 @@
+/* Разметка блоков */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .header > & {
+    display: flex;
+  }
+
+  .section-hero > & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-about-us & {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+
+  .section-our-occupation & {
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+
+  .section-list-name &,
+  .section-content-portfolio & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

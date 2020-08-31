@@ -1,0 +1,68 @@
+/********************  portfolio.html  ****************************/
+
+/* h1 в portfolio.html*/
+.section-content-portfolio .section-name {
+  margin: 0px;
+  padding: 0px;
+}
+/*настройка списка в кнопках*/
+.section-content-portfolio .content-portfolio-ul-button {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+/*отступ у кнопак*/
+.list-style .content-portfolio-list-batton:not(:last-child) {
+  margin-right: 8px;
+}
+
+.content-portfolio-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-portfolio-img .content-portfolio-list:not(:nth-last-child(3n + 1)) {
+  margin-right: 30px;
+}
+.content-portfolio-img .content-portfolio-list:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.content-portfolio-list-img {
+  display: block;
+  width: 370px;
+  height: 294px;
+}
+
+.content-portfolio-img .work-name {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.content-portfolio-img .work-description {
+  margin: 0px;
+}
+
+.portfolio-link-description {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+.content-portfolio-list:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio_line {
+  border-bottom: 1px solid #ececec;
+  min-width: 1200px;
+}
+
+.content-portfolio-link {
+  display: block;
+}

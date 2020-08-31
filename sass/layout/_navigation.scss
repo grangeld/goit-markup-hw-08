@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+/* adress позиционирование*/
+.address-navigation {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.address-navigation-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.navigation-list > li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-navigation-icon {
+  margin-right: 10px;
+  fill: $header-email-telefon;
+  vertical-align: middle;
+
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
