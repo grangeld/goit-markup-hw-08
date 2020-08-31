@@ -180,7 +180,6 @@ ul {
 }
 
 .footer-email {
-  width: 358px;
   height: 50px;
   padding-left: 16px;
   background: transparent;
@@ -190,6 +189,12 @@ ul {
   color: #ffffff;
   outline-color: rgba(255, 255, 255, 0.3);
   margin-right: 12px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-email {
+    width: 100%;
+  }
 }
 
 .footer-email::placeholder {
@@ -427,7 +432,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .section-about-us .about-us-back-img {
-    width: 450px;
+    width: 100%;
     padding-right: 0px;
     padding-left: 0px;
     justify-content: center;
@@ -1039,6 +1044,7 @@ ul {
 
 .our-occupation-list {
   position: relative;
+  min-width: 370px;
 }
 
 .section-our-occupation .background-text {
